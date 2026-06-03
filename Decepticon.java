@@ -10,6 +10,10 @@ public class Decepticon extends Transformer {
         this.kindness = false;
     }
 
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
     public String getTeamName() {
         return teamName;
     }

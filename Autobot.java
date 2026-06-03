@@ -10,6 +10,10 @@ public class Autobot extends Transformer {
         this.kindness = true;
     }
 
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
     public String getTeamName() {
         return teamName;
     }
