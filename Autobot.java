@@ -31,10 +31,10 @@ public class Autobot extends Transformer implements Action {
         System.out.println(getName() + " transforms into vehicles");
     }
 
-    // @Override
-    // public void run() {
-    // System.out.println(getName() + " is running");
-    // }
+    @Override
+    public void run() {
+        System.out.println(getName() + " is running");
+    }
 
     @Override
     public void fire() {
@@ -45,9 +45,4 @@ public class Autobot extends Transformer implements Action {
     public void charge() {
         System.out.println(getName() + " is charging");
     }
-
-    // @Override
-    // public String toString() {
-    // return "Transformer: " + getName();
-    // }
 }
