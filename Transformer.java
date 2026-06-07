@@ -1,7 +1,7 @@
-public class Transformer {
+public abstract class Transformer {
     private String name;
 
-    Transformer(String name) {
+    protected Transformer(String name) {
         this.name = name;
     }
 
@@ -13,15 +13,5 @@ public class Transformer {
         return name;
     }
 
-    public void run() {
-        System.out.println(name + " is running");
-    }
-
-    public void fire() {
-        System.out.println(name + " is firing");
-    }
-
-    public void charge() {
-        System.out.println(name + " is charging");
-    }
+    public abstract void transform();
 }
